@@ -1,0 +1,31 @@
+{
+  "rejection_date": "2026-03-17T02:24:18.029359",
+  "baseline": {
+    "model_name": "decision_tree_baseline_v1",
+    "timestamp": "2026-03-17T02:23:54.395002",
+    "f1_score": 0.65,
+    "roc_auc": 0.85,
+    "precision": 0.72,
+    "recall": 0.6,
+    "accuracy": 0.995
+  },
+  "candidate_model": {
+    "model_name": "decision_tree_improved_v2",
+    "timestamp": "2026-03-17T02:24:04.387454",
+    "f1_score": 0.5233644859813084,
+    "roc_auc": 0.8807953873916123,
+    "precision": 0.9985387240747656,
+    "recall": 0.9976124433833081,
+    "accuracy": 0.9976124433833081
+  },
+  "gap_to_threshold": 0.12663551401869166,
+  "decision": "REJECTED",
+  "reason": "F1-Score 0.5234 < baseline 0.6500",
+  "recommendations": [
+    "Try additional hyperparameter tuning",
+    "Collect more training data",
+    "Experiment with ensemble methods (Random Forest, XGBoost)",
+    "Add new features or improve existing features",
+    "Adjust SMOTE parameters for better oversampling"
+  ]
+}
